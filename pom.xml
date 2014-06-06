@@ -26,6 +26,7 @@
     </dependency>
   </dependencies>
   <build>
+    <finalName>tunnel-listener</finalName>
     <plugins>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
@@ -54,8 +55,9 @@
         <configuration>
           <archive>
             <manifest>
-              <addDefaultImplementationEntries>false</addDefaultImplementationEntries>
+              <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
               <addClasspath>true</addClasspath>
+              <classpathPrefix>dependency/</classpathPrefix>
               <mainClass>me.kjl.TunnelListener</mainClass>
             </manifest>
           </archive>

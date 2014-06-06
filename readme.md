@@ -6,3 +6,6 @@ I'm not wanting to sit at my desk.
 
 I use [Undertow](http://undertow.io) to run the HTTP server since it's an
 upstream project of JBoss (the product I support for my job).
+
+Build: `mvn clean install dependency:copy-dependencies`
+Run:   `java -jar target/tunnel-listener.jar`
